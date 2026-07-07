@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excellence Media Numérique</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 430px;
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 0px solid rgba(255,255,255,0.1);
+      border-radius: 25px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      animation: fadeIn 1s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .logo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00d4ff;
+      margin-bottom: 15px;
+      box-shadow: 0 0 20px rgba(0,212,255,0.5);
+    }
+
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .ministry-image {
+      width: 100%;
+      height: auto;
+      border-radius: 15px; /* Pour correspondre aux autres éléments */
+      object-fit: cover;
+      margin-top: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .desc {
+      color: #cbd5e1;
+      font-size: 15px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      padding: 15px;
+      border-radius: 15px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+      background: #00d4ff;
+      color: black;
+      box-shadow: 0 0 20px rgba(0,212,255,0.5);
+    }
+
+    .btn i {
+      font-size: 20px;
+    }
+
+    .socials {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .socials a {
+      color: white;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      color: #00d4ff;
+      transform: scale(1.2);
+    }
+
+    .map-container {
+      margin-top: 25px;
+      border-radius: 15px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.1);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    .map-container iframe {
+      display: block;
+    }
+
+    footer {
+      margin-top: 25px;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+
+    @media(max-width: 500px) {
+      .container {
+        padding: 25px 20px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <img src="logo.png" alt="Logo" class="logo">
+
+    <h2>MINISTERE DES PETITES ET MOYENNES ENTREPRISES ET DE L'ARTISANAT</h2>
+
+    <img src="img1.png" alt="Représentant du Ministère" class="ministry-image">
+
+    <p class="desc">
+      <br>
+      Retrouvez toutes les plateformes officielles ici.
+    </p>
+
+    <div class="links">
+
+      <a href="https://www.youtube.com/@Minist%C3%A8redesPMEA" class="btn">
+        <i class="fab fa-youtube"></i>
+        YouTube
+      </a>
+
+      <a href="https://www.facebook.com/PMEASI.CG" class="btn">
+        <i class="fab fa-facebook"></i>
+        Facebook
+      </a>
+
+      <a href="https://www.tiktok.com/@ministre.des.pmea" class="btn">
+        <i class="fab fa-tiktok"></i>
+        TikTok
+      </a>
+
+      <a href="https://www.instagram.com/ministere.pmea" class="btn">
+        <i class="fab fa-instagram"></i>
+        Instagram
+      </a>
+
+      <a href="https://www.linkedin.com/in/minist%C3%A8re-des-pmea-b7789641b" class="btn">
+        <i class="fab fa-linkedin"></i>
+        Linkedin
+      </a>
+
+      <a href="https://x.com/ministerepmea" class="btn">
+        <i class="fab fa-x"></i>
+        (ex twitter)
+      </a>
+
+      <a href="https://www.entreprises.gouv.cg" class="btn">
+        <i class="fas fa-globe"></i>
+        Site Officiel
+      </a>
+
+    </div>
+
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15915.228103525287!2d15.2662933!3d-4.2634147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a6a33713437d405%3A0x868b1a37a6b77940!2sBrazzaville!5e0!3m2!1sfr!2scg!4v1715000000000!5m2!1sfr!2scg" 
+        width="100%" 
+        height="200" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.youtube.com/@Minist%C3%A8redesPMEA"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.facebook.com/PMEASI.CG"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/ministere.pmea"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@ministre.des.pmea"><i class="fab fa-tiktok"></i></a>
+      <a href="https://www.linkedin.com/in/minist%C3%A8re-des-pmea-b7789641b"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+    
+
+  </div>
+
+</body>
+</html>
